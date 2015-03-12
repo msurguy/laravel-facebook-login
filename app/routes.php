@@ -46,13 +46,13 @@ Route::get('login/fb/callback', function() {
     	$user = new User;
     	$user->name = $me['first_name'].' '.$me['last_name'];
     	$user->email = $me['email'];
-    	$user->photo = 'https://graph.facebook.com/'.$me['username'].'/picture?type=large';
+    	$user->photo = 'https://graph.facebook.com/'.$me['id'].'/picture?type=large';
 
         $user->save();
 
         $profile = new Profile();
         $profile->uid = $uid;
-    	$profile->username = $me['username'];
+    	$profile->username = $me['id'];
     	$profile = $user->profiles()->save($profile);
     }
      
