@@ -109,6 +109,8 @@ return array(
 
 	'path' => '/',
 
+	'expire_on_close' => false,
+
 	/*
 	|--------------------------------------------------------------------------
 	| Session Cookie Domain

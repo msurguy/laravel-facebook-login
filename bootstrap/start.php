@@ -13,7 +13,7 @@
 
 $app = new Illuminate\Foundation\Application;
 
-$app->redirectIfTrailingSlash();
+//$app->redirectIfTrailingSlash();
 
 /*
 |--------------------------------------------------------------------------
