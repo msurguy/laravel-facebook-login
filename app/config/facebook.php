@@ -3,6 +3,6 @@
 
 // Facebook app Config 
 return array(
-	    'appId' => 'your-app-id',
-	    'secret' => 'your-app-secret'
-	);
+    'appId' => getenv('fb_id'),
+    'secret' => getenv('fb_secret')
+);
